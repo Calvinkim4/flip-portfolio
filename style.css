@@ -1,0 +1,88 @@
+body {
+  background-color: black;
+  font-family: 'Bangers', cursive;
+}
+
+section{
+    width: 100%;
+    height: 100%;
+    perspective: 2000px;
+    text-align: center;
+  }
+
+  div{
+    position: absolute;
+    left: 50%;
+    right: 0;
+    top: 2.5%;
+    bottom: 0;
+    width: 45%;
+    height: 90vh;
+    font-size: 40px;
+    letter-spacing: 2px;
+    color: #16bbd9;
+    text-align: center;
+    border: 10px solid white;
+    text-shadow: 2px 0 2px #fff, -2px 0 2px #fff, 0 -2px 2px #fff, 0 2px 2px #fff;
+  }
+
+  .div1 {
+    background: #abc;
+    transform-origin: left center;
+    transition: 1s;
+    z-index: 1;
+  }
+
+  .div2 {
+    background: #cba;
+    transform-origin: left center;
+    transition: 1s;   
+    z-index: 0;
+  }
+
+  .div3 {
+    background: #cba;
+    transform-origin: left center;
+    transition: 1s;   
+    z-index: -1;
+  }
+
+  .div4 {
+    background: #cba;
+    transform-origin: left center;
+    transition: 1s;   
+    z-index: -2;
+  }
+
+  .div5 {
+    background: #cba;
+    transform-origin: left center;
+    transition: 1s;   
+    z-index: -3;
+  }
+
+  .div-active{
+    transform: rotateY(-180deg);
+    animation: divactive 5s forwards;
+  }
+
+.div-reverse-rotate {
+    transform: rotateY(180deg);
+    /* animation: divactive 2s forwards; */
+  }
+
+  @keyframes divactive {
+    0% {
+      z-index: 1;
+    }
+    100% {
+      z-index: -5;
+    }
+  }
+
+  .div1-reverse {
+    background: #abc;
+    transform-origin: right center;
+    transition: 1s;
+    z-index: 1;
+  }
