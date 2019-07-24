@@ -4,21 +4,26 @@ body {
 }
 
 section{
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     perspective: 2000px;
     -webkit-perspective: 2000px;
     text-align: center;
   }
 
   .help-section {
+    width: 50vw; 
+    height: 56.25vw;
+    max-height: 90vh;
+    max-width: 85vh;
+    margin: auto 0;
     position: absolute;
-    left: 0%;
-    right: 0;
-    top: 2.5%;
+    left: 0;
+    right: 50%;
+    top: 0;
     bottom: 0;
-    width: 45%;
-    height: 90vh;
+    /* width: 45%; */
+    /* height: 90%; */
     font-size: 40px;
     letter-spacing: 2px;
     color: white;
@@ -43,32 +48,64 @@ section{
   }
 
   .comic-bubbles {
-    width: 80px;
-    height: 80px;
+    width: 11%;
+    height: 11%;
     position: absolute;
     bottom: 5px;
+    /* animation: bubble-pop 1s ease infinite; */
+    /* transition: all .3s ease-in-out; */
   }
 
   .bubble1 {
     left: 21%;
+    animation: bubble-pop 1s ease infinite;
   }
 
   .bubble2 {
-    left: 42%;
+    left: 43%;
+    animation: bubble-pop 1.2s ease infinite;
+
   }
 
   .bubble3 {
-    left: 65%;
+    left: 67%;
+    animation: bubble-pop 1.1s ease infinite;
+
   }
 
+  @keyframes bubble-pop {
+    0% {
+      transform: scale(.7);
+    }
+
+    50% {
+      transform: scale(1.1);
+    }
+
+    100% {
+      transform: scale(.7);
+    }
+    
+  }
+
+  /* .comic-bubbles:hover {
+    transform: scale(1.1);
+  } */
+
   .div-container{
+    width: 50vw; 
+    height: 56.25vw;
+    max-height: 90vh;
+    max-width: 85vh;
+    margin: auto 0;
     position: absolute;
     left: 50%;
     right: 0;
-    top: 2.5%;
     bottom: 0;
-    width: 45%;
-    height: 90vh;
+    top: 0;
+    /* width: 45%; */
+    /* height: 90%; */
+    /* padding-top: 45%; */
     font-size: 40px;
     letter-spacing: 2px;
     color: white;
@@ -78,6 +115,11 @@ section{
     transform-style: preserve-3d;
     /* text-shadow: 2px 0 2px #fff, -2px 0 2px #fff, 0 -2px 2px #fff, 0 2px 2px #fff; */
   }
+
+  /* .outer-div {
+    width: 100%;
+    height: 700px;
+  } */
 
   .div1 {
     background-image: linear-gradient(#690404 0%, #FF6060 100%);
@@ -175,7 +217,7 @@ section{
 
 .div-reverse-rotate {
     transform: rotateY(180deg);
-    /* animation: divactive 2s forwards; */
+    animation: divactive 2s forwards;
   }
 
   @keyframes divactive {
@@ -234,7 +276,7 @@ section{
     /* background-color: #B77451; */
     background-color: white;
     border: 2px solid black;
-    color: white;
+    color: black;
     /* border-bottom: 2px solid black; */
     /* border-radius: 5px; */
     /* box-shadow: 8px 8px 10px -3px rgba(0, 0, 0, .8); */
@@ -254,6 +296,7 @@ section{
 
   input:hover {
     transform: scale(1.1);
+    box-shadow: 8px 8px 10px -3px rgba(0, 0, 0, .8); */
   }
 
   textarea {
@@ -267,7 +310,6 @@ section{
       /* background-color: #B77451; */
       background-color: white;
       border: 2px solid black;
-      text-shadow: 2px 0 2px #000, -2px 0 2px #000, 0 -2px 2px #000, 0 2px 2px #000;
       /* border-radius:  5px; */
       /* box-shadow: 8px 8px 10px -3px rgba(0, 0, 0, .8); */
       font-family: 'Bangers', cursive;
@@ -278,11 +320,13 @@ section{
 
   textarea::placeholder {
     color: white;
+    text-shadow: 2px 0 2px #000, -2px 0 2px #000, 0 -2px 2px #000, 0 2px 2px #000;
     font-family: 'Bangers', cursive;
   }
 
   textarea:hover {
     transform: scale(1.1);
+    box-shadow: 8px 8px 10px -3px rgba(0, 0, 0, .8); */
   }
 
   .input-button {
@@ -313,6 +357,7 @@ section{
     background-color: black;
     color: white;
     transform: scale(1.2);
+    box-shadow: 8px 8px 10px -3px rgba(0, 0, 0, .8); */
   }
   
   input:focus {
@@ -331,4 +376,27 @@ section{
     line-height: 2;
     font-size: 30px;
     text-shadow: 2px 0 2px #000, -2px 0 2px #000, 0 -2px 2px #000, 0 2px 2px #000;
+  }
+
+  .panel {
+    padding: 30px;
+    font-size: 20px;
+    text-align: justify;
+  }
+
+  .first-panel {
+    height: 30%;
+    border-bottom: 10px solid white;
+  }
+
+  .second-panel {
+    height: 35%;
+    width: 40%;
+    border-bottom: 10px solid white;
+    border-right: 10px solid white;
+  }
+
+  .third-panel {
+    height: 35%;
+    width: 40%;
   }

@@ -5,6 +5,7 @@
         <link href="https://fonts.googleapis.com/css?family=Metal+Mania&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Bangers" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="style.css">
+        <title>Calvin Kim's PortFolio</title>
     </head>
     <body>
         <section>
@@ -24,7 +25,9 @@
             </div>
             <div class='div1back div-container'>
                 <div class='div-small-container'>
-                   <h1>page 1 back</h1> 
+                    <!-- <div class='first-panel panel'>This is the story of an ambitious software engineer named Calvin Kim who is passionate about learning new concepts within the development space...</div> -->
+                    <!-- <div class='second-panel panel'>Before Calvin started to code, he was a night-time stocker at a Grocery Store</div> -->
+                    <!-- <div class='third-panel panel'>But the desire to strive to better pushed him to learn coding specifically Java</div> -->
                 </div> 
             </div>
             <div class='div2 div-container'>
@@ -56,9 +59,9 @@
             </div>
             <div class='div5 div-container'>
                 <!-- <h1 class='contact-title'>Contact</h1> -->
-                <input type="text" placeholder='Email'/>
-                <input type="text" placeholder='Subject'/>
-                <textarea placeholder='Content'></textarea>
+                <input type="text" placeholder='Email' onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email'" />
+                <input type="text" placeholder='Subject' onfocus="this.placeholder = ''" onblur="this.placeholder = 'Subject'" />
+                <textarea placeholder='Content' onfocus="this.placeholder = ''" onblur="this.placeholder = 'Content'"></textarea>
                 <button class='input-button'>Send</button>
             </div>  
         </section>
