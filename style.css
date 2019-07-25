@@ -75,7 +75,7 @@ section{
 
   @keyframes bubble-pop {
     0% {
-      transform: scale(.7);
+      transform: scale(.2);
     }
 
     50% {
@@ -83,7 +83,7 @@ section{
     }
 
     100% {
-      transform: scale(.7);
+      transform: scale(.2);
     }
     
   }
@@ -256,7 +256,52 @@ section{
     font-family: 'Montserrat Subrayada', sans-serif;
     margin-bottom: 0;
     /* font-family: 'Monoton', cursive; */
+    color: transparent;
+    background: linear-gradient(-45deg, #1ed2f4, #2b2b3a, #eafc40);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-size: 400% 400%;
+    -webkit-animation: gradient-change 10s linear infinite;
+    -moz-animation: gradient-change 10s linear infinite;
+    animation: gradient-change 10s linear infinite;
   }
+
+  @-webkit-keyframes gradient-change {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@-moz-keyframes gradient-change {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes gradient-change {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
 
   p {
     font-size: 20px;
@@ -268,9 +313,9 @@ section{
 
   input {
     display: block;
-    width: 400px;
+    width: 75%;
     height: 50px;
-    margin: 45px auto;
+    margin: 30px auto;
     font-size: 30px;
     text-align: center;
     /* background-color: #B77451; */
@@ -300,12 +345,16 @@ section{
   }
 
   textarea {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box; 
+      width: 75%;
       height: 300px;
+      padding: 15px;
+      margin: 20px auto;
       display: block;
       font-size: 30px;
       text-align: center;
-      width: 370px;
-      margin: 20px auto;
       resize: none;
       /* background-color: #B77451; */
       background-color: white;
@@ -315,7 +364,6 @@ section{
       font-family: 'Bangers', cursive;
       color: black;
       transition: all .3s ease-in-out;
-      padding: 15px;
   }
 
   textarea::placeholder {
@@ -330,7 +378,7 @@ section{
   }
 
   .input-button {
-    width: 100px;
+    width: 15%;
     height: 50px;
     /* border: 1px solid black; */
     border: 2px solid black;
@@ -370,11 +418,11 @@ section{
 
   .add-info {
     margin: 0;
-    padding-top: 30%; 
+    padding-top: 40%; 
     padding-right: 20px;
     padding-left: 20px;
     line-height: 2;
-    font-size: 30px;
+    font-size: 20px;
     text-shadow: 2px 0 2px #000, -2px 0 2px #000, 0 -2px 2px #000, 0 2px 2px #000;
   }
 
@@ -382,14 +430,20 @@ section{
     padding: 30px;
     font-size: 20px;
     text-align: justify;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; 
   }
 
   .first-panel {
     height: 30%;
+    /* float: left; */
     border-bottom: 10px solid white;
   }
 
   .second-panel {
+    /* display: flex; */
+    float: left;
     height: 35%;
     width: 40%;
     border-bottom: 10px solid white;
@@ -397,6 +451,126 @@ section{
   }
 
   .third-panel {
+    /* display: flex; */
+    float: left;
     height: 35%;
     width: 40%;
+    border-right: 10px solid white;
+  }
+  
+  .fourth-panel {
+    float: right;
+    height: 70%;
+    width: 60%;
+  }
+
+  .fifth-panel {
+    
+  }
+
+  .fourteenth-panel {
+    float: left;
+    width: 50%;
+    height: 50%;
+    border-bottom: 10px solid white;
+    border-right: 10px solid white;
+  }
+
+  .fifteenth-panel {
+    float: right;
+    width: 50%;
+    height: 50%;
+    border-bottom: 10px solid white;
+  }
+
+  .sixteenth-panel {
+    float: left;
+    width: 50%;
+    height: 50%;
+    border-right: 10px solid white;
+  }
+
+  .seventeenth-panel {
+    float: right;
+    width: 50%;
+    height: 50%;
+  }
+
+  .eighteenth-panel {
+    width: 100%;
+    height: 20%;
+    border-bottom: 10px solid white;
+  }
+
+  .nineteenth-panel {
+    width: 100%;
+    height: 40%;
+    border-bottom: 10px solid white;
+  }
+
+  .twentieth-panel {
+    width: 100%;
+    height: 40%;
+  }
+
+  a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    text-shadow: 2px 0 2px #000, -2px 0 2px #000, 0 -2px 2px #000, 0 2px 2px #000;
+    font-size: 30px;
+    margin: 20px;
+    transition: all .3s ease-in-out;
+  }
+
+  a:hover {
+    transform: scale(1.3);
+  }
+
+  /* .dotted-back {
+    background-image: radial-gradient(ellipse farthest-corner, transparent 0%, transparent 35%, #fff 30%, #fff 40%, transparent 90%), radial-gradient(ellipse farthest-corner at 0px 0px, transparent 0%, transparent 20%, #fff 15%, #fff 20%, transparent 50%), radial-gradient(ellipse farthest-corner at 8px 8px, transparent 0%, transparent 20%, #fff 15%, #fff 20%, transparent 50%), radial-gradient(ellipse farthest-corner at 0px 8px, transparent 0%, transparent 20%, #fff 15%, #fff 20%, transparent 40%), radial-gradient(ellipse farthest-corner at 8px 0px, transparent 0%, transparent 20%, #fff 15%, #fff 20%, transparent 50%),  linear-gradient(40deg, #bd2d10 0, #f4502f 30%, #ff6e51 50%, #f4502f 70%, #bd2d10 100%);
+  background-size: 8px 8px, 8px 8px, 8px 8px, 8px 8px, 8px 8px, 100% 100%;
+  } */
+
+  .project-image {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 8px 8px 10px -3px rgba(0, 0, 0, .8);
+
+  }
+  
+  .project-desc {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    visibility: hidden;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, .8);
+    border-radius: 5px;
+    font-size: 25px;
+  }
+  
+  .project-name {
+    font-size: 20px;
+    color: white;
+    margin: 5px;
+  }
+  
+  .project-name2 {
+    font-size: 10px;
+    color: white;
+    margin: 5px;
+  }
+  
+  .indiv-container {
+    position: relative;
+    margin: 25% auto;
+  }
+  
+  .indiv-container:hover .project-desc {
+    visibility: visible;
+    opacity: 1;
   }
