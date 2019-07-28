@@ -12,10 +12,10 @@ section{
   }
 
   .help-section {
-    width: 50vw; 
+    width: 45vw; 
     height: 56.25vw;
     max-height: 90vh;
-    max-width: 85vh;
+    max-width: 177.78vh;
     margin: auto 0;
     position: absolute;
     left: 0;
@@ -48,42 +48,58 @@ section{
   }
 
   .comic-bubbles {
-    width: 11%;
-    height: 11%;
-    position: absolute;
-    bottom: 5px;
+    width: 13%;
+    height: 13%;
+    margin: 20px;
+    /* position: absolute; */
+    /* top: 0%; */
     /* animation: bubble-pop 1s ease infinite; */
     /* transition: all .3s ease-in-out; */
   }
 
   .bubble1 {
-    left: 21%;
-    animation: bubble-pop 1s ease infinite;
+    left: 10%;
+    animation: bubble-pop 2.5s ease infinite;
   }
 
   .bubble2 {
-    left: 43%;
-    animation: bubble-pop 1.2s ease infinite;
+    left: 38%;
+    animation: bubble-pop 2.7s ease infinite;
 
   }
 
   .bubble3 {
-    left: 67%;
-    animation: bubble-pop 1.1s ease infinite;
+    left: 70%;
+    animation: bubble-pop 2.6s ease infinite;
 
   }
 
   @keyframes bubble-pop {
     0% {
-      transform: scale(.2);
+      transform: scale(0);
     }
 
-    50% {
-      transform: scale(1.1);
+    5% {
+      transform: scale(1.3);
+    }
+    20% {
+      transform: scale(.9);
+    }
+
+    40% {
+      transform: scale(1.3);
+    }
+
+    60% {
+      transform: scale(.9);
+    }
+
+    80% {
+      transform: scale(1.3);
     }
 
     100% {
-      transform: scale(.2);
+      transform: scale(0);
     }
     
   }
@@ -93,10 +109,10 @@ section{
   } */
 
   .div-container{
-    width: 50vw; 
+    width: 45vw; 
     height: 56.25vw;
     max-height: 90vh;
-    max-width: 85vh;
+    max-width: 177.78vh;
     margin: auto 0;
     position: absolute;
     left: 50%;
@@ -108,11 +124,12 @@ section{
     /* padding-top: 45%; */
     font-size: 40px;
     letter-spacing: 2px;
-    color: white;
+    color: rgb(6, 9, 43);
     text-align: center;
     border: 10px solid white;
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
+    /* text-shadow: 2px 0 2px #000, -2px 0 2px #000, 0 -2px 1px #000, 0 2px 2px #000; */
     /* text-shadow: 2px 0 2px #fff, -2px 0 2px #fff, 0 -2px 2px #fff, 0 2px 2px #fff; */
   }
 
@@ -122,12 +139,42 @@ section{
   } */
 
   .div1 {
-    background-image: linear-gradient(#690404 0%, #FF6060 100%);
+    /* background-image: linear-gradient(#690404 0%, #FF6060 100%); */
+    background-color: rgb(6, 9, 43);
+    /* background-image: linear-gradient(to bottom, rgba(0,0,0, 0) 70%, rgba(255,255,255,1) 100%); */
+    /* background-image: -webkit-radial-gradient(bottom, 60% 40%, white 0%,rgba(0,0,0, 0) 25%,rgba(0,0,0, 0) 100%);
+    background-image: radial-gradient(60% 40% at bottom,white 0%,rgba(0,0,0, 0) 25%,rgba(0,0,0, 0) 100%); */
+    background-image: -webkit-radial-gradient(bottom,60% 35%,white,white,rgba(255,255,255, .3),rgba(255,255,255, .2), rgba(255,255,255, .1), rgba(0,0,0, 0));
+    background-image: radial-gradient(60% 35% at bottom,white,white,rgba(255,255,255, .3),rgba(255,255,255, .2), rgba(255,255,255, .1), rgba(0,0,0, 0));
     transform-origin: left center;
     transition: 1s;
     z-index: 2;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
+    text-shadow: none;
+    -webkit-animation: bg-change 20s infinite;
+    -moz-animation: bg-change 20s infinite;
+    animation: bg-change 20s infinite;
+  }
+
+  @keyframes bg-change {
+    /* 0% {
+      background-image: linear-gradient(#690404 0%, #FF6060 100%);
+    }
+
+    50% {
+      background-image: linear-gradient(#000000 0%, #000020 100%);
+    } 
+
+    100% {
+      background-image: linear-gradient(#690404 0%, #FF6060 100%);
+    } */
+    0%, 100% { background-color: rgb(6, 9, 43); }
+    16.66% { background-color: rgb(9, 26, 82); }
+    33.33% { background-color: rgb(20, 47, 134); }
+    50% { background-color: rgb(92, 162, 255); }
+    66.66% { background-color: rgb(20, 47, 134); }
+    83.33% { background-color: rgb(9, 26, 82); }
   }
 
   .div1back {
@@ -145,7 +192,10 @@ section{
     transform: rotateY(180deg);
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-    background-image: linear-gradient(#690404 0%, #FF6060 100%);
+    /* background-image: linear-gradient(#690404 0%, #FF6060 100%); */
+    background-image: radial-gradient(circle, lightcoral, tomato);
+    /* background-image: radial-gradient(ellipse farthest-corner, transparent 0%, transparent 35%, rgb(6, 9, 43) 30%, rgb(6, 9, 43) 40%, transparent 90%), radial-gradient(ellipse farthest-corner at 0px 0px, transparent 0%, transparent 20%, rgb(6, 9, 43) 15%, rgb(6, 9, 43) 20%, transparent 50%), radial-gradient(ellipse farthest-corner at 8px 8px, transparent 0%, transparent 20%, rgb(6, 9, 43) 15%, rgb(6, 9, 43) 20%, transparent 50%), radial-gradient(ellipse farthest-corner at 0px 8px, transparent 0%, transparent 20%, rgb(6, 9, 43) 15%, rgb(6, 9, 43) 20%, transparent 40%), radial-gradient(ellipse farthest-corner at 8px 0px, transparent 0%, transparent 20%, rgb(6, 9, 43) 15%, rgb(6, 9, 43) 20%, transparent 50%),  linear-gradient(40deg, #ababab 0, #c7c5c5 30%, #e3e3e3 50%, #c7c5c5 70%, #ababab 100%);
+    background-size: 8px 8px, 8px 8px, 8px 8px, 8px 8px, 8px 8px, 100% 100%; */
   }
 
   .div-small-container > h1 {
@@ -154,7 +204,8 @@ section{
 
   .div2 {
     background: #cba;
-    background-image: linear-gradient(#690404 0%, #FF6060 100%);
+    /* background-image: linear-gradient(#690404 0%, #FF6060 100%); */
+    background-color: rgb(6, 9, 43);
     transform-origin: left center;
     transition: 1s;   
     z-index: 0;
@@ -170,7 +221,8 @@ section{
 
   .div3 {
     background: #cba;
-    background-image: linear-gradient(#690404 0%, #FF6060 100%);
+    /* background-image: linear-gradient(#690404 0%, #FF6060 100%); */
+    background-color: rgb(6, 9, 43);
     transform-origin: left center;
     transition: 1s;   
     z-index: -2;
@@ -186,7 +238,8 @@ section{
 
   .div4 {
     background: #cba;
-    background-image: linear-gradient(#690404 0%, #FF6060 100%);
+    /* background-image: linear-gradient(#690404 0%, #FF6060 100%); */
+    background-color: rgb(6, 9, 43);
     transform-origin: left center;
     transition: 1s;   
     z-index: -4;
@@ -201,8 +254,9 @@ section{
   }
 
   .div5 {
-    background: #cba;
-    background-image: linear-gradient(#690404 0%, #FF6060 100%);
+    background-image:radial-gradient(circle, lightblue, deepskyblue);
+    /* background-image: linear-gradient(#690404 0%, #FF6060 100%); */
+    background-color: rgb(6, 9, 43);
     transform-origin: left center;
     transition: 1s;   
     z-index: -6;
@@ -244,7 +298,8 @@ section{
   .issue-title {
     margin: auto 0;
     font-size: 30px;
-    color: #690404;
+    /* color: #690404; */
+    color: #f5d742;
     line-height: 50px;
   }
 
@@ -253,18 +308,22 @@ section{
     /* background-color: rgba(0, 0, 0, .3); */
     /* padding: 10px; */
     /* font-family: 'Metal Mania', cursive; */
-    font-family: 'Montserrat Subrayada', sans-serif;
-    margin-bottom: 0;
+    /* font-family: 'Montserrat Subrayada', sans-serif; */
+    font-family: 'Bangers', cursive;
+    letter-spacing: 8px;
+    margin: 0;
     /* font-family: 'Monoton', cursive; */
-    color: transparent;
-    background: linear-gradient(-45deg, #1ed2f4, #2b2b3a, #eafc40);
+    color: #f5d742;
+    text-shadow: 2px 0 2px #000, -2px 0 2px #000, 0 -2px 2px #000, 0 2px 2px #000;
+    /* color: transparent; */
+    /* background: linear-gradient(-45deg, #1ed2f4, #2b2b3a, #eafc40);
     background-clip: text;
     -webkit-background-clip: text;
     -moz-background-clip: text;
     background-size: 400% 400%;
     -webkit-animation: gradient-change 10s linear infinite;
     -moz-animation: gradient-change 10s linear infinite;
-    animation: gradient-change 10s linear infinite;
+    animation: gradient-change 10s linear infinite; */
   }
 
   @-webkit-keyframes gradient-change {
@@ -314,8 +373,8 @@ section{
   input {
     display: block;
     width: 75%;
-    height: 50px;
-    margin: 30px auto;
+    height: 8%;
+    margin: 20px auto;
     font-size: 30px;
     text-align: center;
     /* background-color: #B77451; */
@@ -340,8 +399,10 @@ section{
   }
 
   input:hover {
-    transform: scale(1.1);
-    box-shadow: 8px 8px 10px -3px rgba(0, 0, 0, .8); */
+    /* transform: scale(1.1); */
+    /* background-color: #f5d742; */
+    /* box-shadow: 8px 8px 10px -3px rgba(0, 0, 0, .8); */
+    /* box-shadow: 8px 8px 10px -3px white; */
   }
 
   textarea {
@@ -349,7 +410,7 @@ section{
       -moz-box-sizing: border-box;
       box-sizing: border-box; 
       width: 75%;
-      height: 300px;
+      height: 40%;
       padding: 15px;
       margin: 20px auto;
       display: block;
@@ -372,14 +433,29 @@ section{
     font-family: 'Bangers', cursive;
   }
 
+  ::-webkit-input-placeholder {
+    opacity: .3;
+  }
+  ::-moz-placeholder {
+    opacity: .3;
+  }
+  :-ms-input-placeholder {
+    opacity: .3;
+  }
+  :-moz-placeholder {
+    opacity: .3;
+  }
+
   textarea:hover {
-    transform: scale(1.1);
-    box-shadow: 8px 8px 10px -3px rgba(0, 0, 0, .8); */
+    /* transform: scale(1.1); */
+    /* box-shadow: 8px 8px 10px -3px rgba(0, 0, 0, .8); */
+    /* background-color: #f5d742; */
+    /* box-shadow: 8px 8px 10px -3px white; */
   }
 
   .input-button {
     width: 15%;
-    height: 50px;
+    height: 8%;
     /* border: 1px solid black; */
     border: 2px solid black;
     /* border-radius: 5px; */
@@ -402,10 +478,10 @@ section{
   }
   
   .input-button:hover {
-    background-color: black;
+    background-color: #f5d742;
     color: white;
     transform: scale(1.2);
-    box-shadow: 8px 8px 10px -3px rgba(0, 0, 0, .8); */
+    /* box-shadow: 8px 8px 10px -3px white; */
   }
   
   input:focus {
@@ -417,51 +493,74 @@ section{
   }
 
   .add-info {
-    margin: 0;
-    padding-top: 40%; 
+    margin-top: 0;
     padding-right: 20px;
     padding-left: 20px;
+    padding-top: 35%;
     line-height: 2;
     font-size: 20px;
     text-shadow: 2px 0 2px #000, -2px 0 2px #000, 0 -2px 2px #000, 0 2px 2px #000;
   }
 
   .panel {
-    padding: 30px;
+    padding: 5px;
     font-size: 20px;
-    text-align: justify;
+    line-height: 25px;
+    text-align: left;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box; 
   }
 
   .first-panel {
-    height: 30%;
+    height: 40%;
     /* float: left; */
     border-bottom: 10px solid white;
+    background-image:radial-gradient(circle, rgb(174, 231, 250), rgb(4, 160, 212));
   }
+
+  .yellow-textbox {
+    background-color: #f5d742;
+    padding: 10px;
+    border: 2px solid black;
+    transition: all .3s ease-in-out;
+    /* -webkit-transform: skew(-10deg); 
+    -moz-transform: skew(-10deg); 
+    transform: skew(-10deg); */
+  }
+
+  /* .yellow-textbox:hover {
+    transform: scale(1.1);
+    box-shadow: 8px 8px 10px -3px white;
+
+  } */
 
   .second-panel {
     /* display: flex; */
+    /* background-image:radial-gradient(circle, yellow, orange); */
+    /* background-image:radial-gradient(circle, rgb(250, 162, 162), rgb(248, 90, 62)); */
+    /* background-image:radial-gradient(circle, rgb(79, 88, 163), rgb(6, 9, 43)); */
+    background-image:radial-gradient(circle, rgb(174, 231, 250), rgb(4, 160, 212));
     float: left;
-    height: 35%;
-    width: 40%;
-    border-bottom: 10px solid white;
+    height: 60%;
+    width: 50%;
+    /* border-bottom: 10px solid white; */
     border-right: 10px solid white;
   }
 
   .third-panel {
     /* display: flex; */
-    float: left;
-    height: 35%;
-    width: 40%;
-    border-right: 10px solid white;
+    float: right;
+    height: 60%;
+    width: 50%;
+    /* border-right: 10px solid white; */
+    background-image:radial-gradient(circle, rgb(174, 231, 250), rgb(4, 160, 212));
   }
   
   .fourth-panel {
     float: right;
     height: 70%;
-    width: 60%;
+    width: 50%;
   }
 
   .fifth-panel {
@@ -518,13 +617,17 @@ section{
     text-decoration: none;
     color: white;
     text-shadow: 2px 0 2px #000, -2px 0 2px #000, 0 -2px 2px #000, 0 2px 2px #000;
-    font-size: 30px;
+    font-size: 40px;
     margin: 20px;
     transition: all .3s ease-in-out;
   }
 
   a:hover {
     transform: scale(1.3);
+  }
+
+  .external-links:hover {
+    color: #f5d742;
   }
 
   /* .dotted-back {
@@ -573,4 +676,8 @@ section{
   .indiv-container:hover .project-desc {
     visibility: visible;
     opacity: 1;
+  }
+
+  .icons {
+    margin-top: 20px;
   }
