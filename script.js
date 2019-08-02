@@ -73,27 +73,3 @@ for(let i = 0; i < webAppLinks.length; i++)
    }
 }
 
-var form = document.getElementsByTagName('form')[0];
-   form.addEventListener('submit',contact,false);
-   function contact(e) {
-      e.preventDefault();
-
-      var target = e.target;
-      var message = '';
-
-      // Loop Through All Input Fields
-      for(let i = 0; i < target.length; ++i) {
-         // Check to make sure it's a value. Don't need to include Buttons
-         if(target[i].type != 'text' && target[i].type != 'textarea') {
-                // Skip to next input since this one doesn't match our rules
-            continue;
-         }
-
-         message +=target[i].value;
-      }
-      // Modify the hidden body input field that is required for the mailto: scheme
-      target.elements["body"].value = message;
-
-      // Submit the form since we previously stopped it. May cause recursive loop in some browsers? Should research this.
-      this.submit();
-   }
