@@ -143,12 +143,19 @@ section{
   }
 
   @keyframes bg-change {
-    0%, 100% { background-color: rgb(6, 9, 43); }
+    /* 0%, 100% { background-color: rgb(6, 9, 43); }
     16.66% { background-color: rgb(9, 26, 82); }
     33.33% { background-color: rgb(20, 47, 134); }
     50% { background-color: rgb(92, 162, 255); }
     66.66% { background-color: rgb(20, 47, 134); }
-    83.33% { background-color: rgb(9, 26, 82); }
+    83.33% { background-color: rgb(9, 26, 82); } */
+
+    0%, 100% { background-color: rgb(92, 162, 255); }
+    16.66% { background-color: rgb(51, 84, 194); }
+    33.33% { background-color: rgb(9, 26, 82); }
+    50% { background-color: rgb(6, 9, 43); }
+    66.66% { background-color: rgb(9, 26, 82); }
+    83.33% { background-color: rgb(51, 84, 194); }
   }
 
   .div1back {
@@ -431,13 +438,18 @@ section{
     outline: none;
   }
 
+  .addinfo-div {
+    margin: 35% auto;
+  }
+
   .add-info {
-    margin-top: 0;
+    /* text-align: center; */
+    /* margin: 10% auto; */
     padding-right: 20px;
     padding-left: 20px;
-    padding-top: 35%;
+    padding-top: 30%;
     line-height: 2;
-    font-size: 20px;
+    font-size: 30px;
   }
 
   .panel {
@@ -490,47 +502,94 @@ section{
   }
   
   .fourth-panel {
+    float: left;
     height: 60%;
+    width: 50%;
     border-bottom: 10px solid white;
+    border-right: 10px solid white;
+    background-image:radial-gradient(circle, rgb(174, 231, 250), rgb(4, 160, 212));
   }
 
   .fifth-panel {
-    height: 40%;
+    float: right;
+    height: 60%;
+    width: 50%;
+    border-bottom: 10px solid white;
+    background-image:radial-gradient(circle, rgb(174, 231, 250), rgb(4, 160, 212));
   }
 
   .to-bottom {
     position: absolute;
     bottom: 1%;
     right: 1%;
+    /* margin-bottom: 0px;
+    margin-right: 0px; */
   }
 
-  .sixth-panel {}
+  .sixth-panel {
+    clear: both;
+    height: 40%;
+    width: 100%;
+    background-image:radial-gradient(circle, rgb(174, 231, 250), rgb(4, 160, 212));
+  }
 
-  .fourteenth-panel {
+  .eighth-panel {
     float: left;
-    width: 50%;
     height: 50%;
+    width: 50%;
     border-bottom: 10px solid white;
     border-right: 10px solid white;
+    background-image:radial-gradient(circle, rgb(174, 231, 250), rgb(4, 160, 212));
+  }
+
+  .ninth-panel {
+    float: right;
+    height: 50%;
+    width: 50%;
+    border-bottom: 10px solid white;
+    background-image:radial-gradient(circle, rgb(174, 231, 250), rgb(4, 160, 212));
+  }
+
+  .tenth-panel {
+    /* clear: both; */
+    float: left;
+    height: 50%;
+    width: 50%;
+    border-right: 10px solid white;
+    background-image:radial-gradient(circle, rgb(174, 231, 250), rgb(4, 160, 212));
+  }
+
+  .eleventh-panel {
+    float: right;
+    height: 50%;
+    width: 50%;
+    background-image:radial-gradient(circle, rgb(174, 231, 250), rgb(4, 160, 212));
+  }
+
+  .fourteenth-panel {
+    width: 100%;
+    height: 40%;
+    border-bottom: 10px solid white;
+    background-image:radial-gradient(circle, rgb(174, 231, 250), rgb(4, 160, 212));
   }
 
   .fifteenth-panel {
-    float: right;
-    width: 50%;
-    height: 50%;
-    border-bottom: 10px solid white;
+    width: 100%;
+    height: 60%;
+    background-image:radial-gradient(circle, rgb(174, 231, 250), rgb(4, 160, 212));
   }
 
-  .sixteenth-panel {
+  /* .sixteenth-panel {
     float: left;
     width: 50%;
     height: 50%;
     border-right: 10px solid white;
-  }
+  } */
 
   .seventeenth-panel {
     height: 20%;
     border-bottom: 10px solid white;
+    background-image:radial-gradient(circle, rgb(174, 231, 250), rgb(4, 160, 212));
   }
 
   .eighteenth-panel {
@@ -539,6 +598,7 @@ section{
     height: 40%;
     border-bottom: 10px solid white;
     border-right: 10px solid white;
+    background-image:radial-gradient(circle, rgb(174, 231, 250), rgb(4, 160, 212));
   }
 
   .nineteenth-panel {
@@ -547,6 +607,7 @@ section{
     height: 40%;
     border-bottom: 10px solid white;
     border-right: 10px solid white;
+    background-image:radial-gradient(circle, rgb(174, 231, 250), rgb(4, 160, 212));
   }
 
   .twentieth-panel {
@@ -555,6 +616,7 @@ section{
     height: 40%;
     border-bottom: 10px solid white;
     border-right: 10px solid white;
+    background-image:radial-gradient(circle, rgb(174, 231, 250), rgb(4, 160, 212));
   }
 
   .twentyfirst-panel {
@@ -562,6 +624,7 @@ section{
     width: 25%;
     height: 40%;
     border-bottom: 10px solid white;
+    background-image:radial-gradient(circle, rgb(174, 231, 250), rgb(4, 160, 212));
   }
 
   .twentysecond-panel {
@@ -569,6 +632,7 @@ section{
     width: 25%;
     height: 40%;
     border-right: 10px solid white;
+    background-image:radial-gradient(circle, rgb(174, 231, 250), rgb(4, 160, 212));
   }
 
   .twentythird-panel {
@@ -576,6 +640,7 @@ section{
     width: 25%;
     height: 40%;
     border-right: 10px solid white;
+    background-image:radial-gradient(circle, rgb(174, 231, 250), rgb(4, 160, 212));
   }
 
   .twentyfourth-panel {
@@ -583,12 +648,14 @@ section{
     width: 25%;
     height: 40%;
     border-right: 10px solid white;
+    background-image:radial-gradient(circle, rgb(174, 231, 250), rgb(4, 160, 212));
   }
 
   .twentyfifth-panel {
     float: right;
     width: 25%;
     height: 40%;
+    background-image:radial-gradient(circle, rgb(174, 231, 250), rgb(4, 160, 212));
   }
 
   a {
@@ -609,12 +676,40 @@ section{
     color: #f5d742;
   }
 
+  .project1-div {
+    width: 50%;
+    height: 50%;
+    float: left;
+    margin: auto; 
+  }
+
+  .project2-div {
+    width: 50%;
+    height: 50%;
+    float: right;
+    margin: auto; 
+  }
+
+  .project3-div {
+    width: 50%;
+    height: 50%;
+    float: left;
+    margin: auto; 
+  }
+
+  .project4-div {
+    width: 50%;
+    height: 50%;
+    float: right;
+    margin: 0 auto; 
+  }
 
   .project-image {
     width: 100%;
     height: auto;
     border-radius: 5px;
-    box-shadow: 8px 8px 10px -3px rgba(0, 0, 0, .8);
+    border: 2px solid black;
+    /* box-shadow: 8px 8px 10px -3px rgba(0, 0, 0, .8); */
 
   }
   
@@ -644,8 +739,8 @@ section{
   }
   
   .indiv-container {
-    position: relative;
-    margin: 25% auto;
+    width: 80%;
+    height: auto;
   }
   
   .indiv-container:hover .project-desc {
@@ -689,21 +784,69 @@ section{
     display: block;
     height: 70%;
     width: auto;
+    margin: 15% auto;
+  }
+
+  .panel5a-img {
+    display: block;
+    height: 70%;
+    width: auto;
+    margin: 2% auto;
+  }
+
+  .panel8-img {
+    display: block;
+    height: auto;
+    width: 70%;
+    margin: 10% auto;
+  }
+
+  .panel9-img {
+    display: block;
+    height: 50%;
+    width: auto;
+    margin: 2% auto;
+  }
+
+  .panel10-gif {
+    display: block;
+    height: auto;
+    width: 80%;
+    margin: 5% auto;
+  }
+
+  .panel11-img {
+    display: block;
+    height: auto;
+    width: 80%;
+    margin: 5% auto;
+  }
+  
+  .panel13-img {
+    display: block;
+    height: auto;
+    width: 70%;
     margin: 2% auto;
   }
 
   .hackerman-div {
     width: 100%;
-    height: 100%;
+    height: auto;
   }
 
   .hackerman-last {
-    position: absolute;
-    bottom: 5%;
+    /* position: absolute;
+    bottom: 5%; */
     display: block;
-    width: 60%;
+    width: 80%;
     height: auto;
-    margin: 0 auto;
+    margin: 20% auto;
+  }
+
+  .profile-img {
+    display: block;
+    height: 60%;
+    margin: auto;
   }
 
   .profile {
@@ -727,3 +870,70 @@ section{
       transform: scale(1);
     }
   }
+
+  .hackerman-title {
+    padding: 20px;
+    color: transparent;
+    background: linear-gradient(-45deg, #f21f13, #27cc7f, #1340f2);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-size: 400% 400%;
+    -webkit-animation: gradient-change 10s linear infinite;
+    -moz-animation: gradient-change 10s linear infinite;
+    animation: gradient-change 10s linear infinite;
+  }
+
+  @-webkit-keyframes gradient-change {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@-moz-keyframes gradient-change {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes gradient-change {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.skill-icons {
+  font-size: 60px;
+}
+
+.icon-div {
+  display: inline-block;
+  margin: 10px;
+}
+
+.postcript {
+  margin: 5px;
+}
+
+.webapp-links {
+  font-size: 10px;
+  margin: 0;
+}
