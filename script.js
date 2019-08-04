@@ -40,15 +40,6 @@ document.querySelector('.div4back').onclick = function pageFlip() {
     document.querySelector('.div4back').classList.toggle('div-active');
 }
 
-
-// document.querySelector('.div5').onclick = function pageFlip() {
-//     document.querySelector('.div5').classList.toggle('div-active');
-// }
-
-// document.querySelector('.indiv-container').onclick = function (event) {
-//     event.stopPropagation();
-// }
-
 let projectLinks = document.getElementsByClassName("indiv-container");
 for(let i = 0; i < projectLinks.length; i++)
 {

@@ -1,8 +1,5 @@
 <!DOCTYPE html>
     <head>
-        <link href="https://fonts.googleapis.com/css?family=Monoton&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Montserrat+Subrayada&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Metal+Mania&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Bangers" rel="stylesheet">
         <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
         <link rel="stylesheet" type="text/css" href="style.css">
@@ -11,19 +8,37 @@
     <body>
         <section>
             <div class='help-section'>
-                <p class='help-p'>Click on the pages to turn  ---></p>
+                <div class='help-section-inside'>
+                    <div class="inside-position">
+                        <div class="inside-size">
+                            Click on the pages to turn  --->
+                        </div>
+                    </div>
+                </div>
+                
             </div>
             <div class='div1 div-container'>
                 <div class='comic-issue'>
-                    <h3 class='issue-title'>Hacker-Man #1</h3>
+                    <div class="inside-position">
+                        <div class='issue-title'>
+                            Hacker-Man #1
+                        </div>
+                    </div>
                 </div>
-                <img class='comic-bubbles bubble1' src='https://i.imgur.com/BavnTiU.png' alt='front-end developer'/>
-                <img class='comic-bubbles bubble2' src='https://i.imgur.com/Za6Ug1X.png' alt='web-developer'/>
-                <img class='comic-bubbles bubble3' src='https://i.imgur.com/EcP8dTf.png' alt='software engineer'/>
-                <h1 class='name'>Calvin Kim</h1>
-                <p class='name'>The Origin</p>
+                <!-- <div class='bubble-containers'>
+                    <img class='comic-bubbles bubble1' src='https://i.imgur.com/BavnTiU.png' alt='front-end developer'/>
+                    <img class='comic-bubbles bubble2' src='https://i.imgur.com/Za6Ug1X.png' alt='web-developer'/>
+                    <img class='comic-bubbles bubble3' src='https://i.imgur.com/EcP8dTf.png' alt='software engineer'/>
+                </div> -->
+                <div class='title-container'>
+                    <h1 class='name'>Calvin Kim</h1>
+                    <p class='smaller-name'>The Origin</p>
+                </div>
                 <img class='hackerman-gif' src='https://i.imgur.com/634DXZc.gif' alt='Hacker-Man'/>
                 <img class='skyline-img' src="https://i.imgur.com/iDcYsyl.png" alt='city skyline'/>
+                <div class="positions">
+                    Front-End Developer -- Web-Developer -- Software Engineer
+                </div>
             </div>
             <div class='div1back div-container'>
                 <div class='div-small-container'>
@@ -31,7 +46,11 @@
                         <div class='yellow-textbox'>
                             This is the story of an ambitious software engineer named Calvin Kim and how he started programming.
                         </div>
-                        <img class='panel1-img' src='https://i.imgur.com/oFj0kwt.png' alt='drivers license' />
+                        <div class='inside-panel-img'>
+                            <div class="inside-position">
+                                <img class='panel1-img' src='https://i.imgur.com/oFj0kwt.png' alt='drivers license' />
+                            </div>   
+                        </div>   
                     </div>
                     <div class='second-panel panel'>
                         <div class='yellow-textbox'>
@@ -75,7 +94,11 @@
                         <div class='yellow-textbox'>
                             He started building a mobile android game using an open-source framework called Libgdx. He called the game JumperFall.
                         </div>
-                        <img class='panel9-img' src='https://i.imgur.com/epXqqrQ.png' alt='Jumperfall'/>
+                        <div class='inside-panel-img'>
+                            <div class="inside-position">
+                                <img class='panel9-img' src='https://i.imgur.com/epXqqrQ.png' alt='Jumperfall'/>
+                            </div>   
+                        </div>
                     </div>
                     <div class='tenth-panel panel'>
                         <div class='yellow-textbox'>
@@ -142,27 +165,33 @@
                         <h6 class='postcript'>**Click on their names to open their portfolios**</h6>
                     </div>
                     <div class='eighteenth-panel panel'>
-                        <a class='profile' href='https://christinaatai.com/' rel="noopener noreferrer" target="_blank">Christina Tai</a>
+                        <a class='profile' href='https://christinaatai.com/' rel="noopener noreferrer" target="_blank">Christina</a>
+                        <a class='profile' href='https://christinaatai.com/' rel="noopener noreferrer" target="_blank">Tai</a>
                         <img class='profile-img' src='https://i.imgur.com/p4QlQTw.png' alt='Christina' />
                     </div>
                     <div class='nineteenth-panel panel'>
-                        <a class='profile' href='https://www.kchiudesign.com/' rel="noopener noreferrer" target="_blank">Katherine Chiu</a>
+                        <a class='profile' href='https://www.kchiudesign.com/' rel="noopener noreferrer" target="_blank">Katherine</a>
+                        <a class='profile' href='https://www.kchiudesign.com/' rel="noopener noreferrer" target="_blank">Chiu</a>
                         <img class='profile-img' src='https://i.imgur.com/6rD2JpE.png' alt='Katherine' />
                     </div>
                     <div class='twentieth-panel panel'>
-                        <a class='profile' href='https://www.mckenziewarren.com/' rel="noopener noreferrer" target="_blank">Mckenzie Warren</a>
+                        <a class='profile' href='https://www.mckenziewarren.com/' rel="noopener noreferrer" target="_blank">Mckenzie</a>
+                        <a class='profile' href='https://www.mckenziewarren.com/' rel="noopener noreferrer" target="_blank">Warren</a>
                         <img class='profile-img' src='https://i.imgur.com/32VcLpi.png' alt='Mckenzie' />
                     </div>
                     <div class='twentyfirst-panel panel'>
-                        <a class='profile' href='https://www.suyoungmin.com/' rel="noopener noreferrer" target="_blank">Suyoung Min</a>
+                        <a class='profile' href='https://www.suyoungmin.com/' rel="noopener noreferrer" target="_blank">Suyoung</a>
+                        <a class='profile' href='https://www.suyoungmin.com/' rel="noopener noreferrer" target="_blank">Min</a>
                         <img class='profile-img' src='https://i.imgur.com/DEqDiVq.png' alt='Suyoung' />
                     </div>
                     <div class='twentysecond-panel panel'>
-                        <a class='profile' href='http://www.codeloriana.com/' rel="noopener noreferrer" target="_blank">Loriana Hines</a>
+                        <a class='profile' href='http://www.codeloriana.com/' rel="noopener noreferrer" target="_blank">Loriana</a>
+                        <a class='profile' href='http://www.codeloriana.com/' rel="noopener noreferrer" target="_blank">Hines</a>
                         <img class='profile-img' src='https://i.imgur.com/O4CrhUO.png' alt='Loriana' />
                     </div>
                     <div class='twentythird-panel panel'>
-                        <a class='profile' href='http://www.shenae.nyc/' rel="noopener noreferrer" target="_blank">Shenae Simmons</a>
+                        <a class='profile' href='http://www.shenae.nyc/' rel="noopener noreferrer" target="_blank">Shenae</a>
+                        <a class='profile' href='http://www.shenae.nyc/' rel="noopener noreferrer" target="_blank">Simmons</a>
                         <img class='profile-img' src='https://i.imgur.com/zRj2xhi.png' alt='Shenae' />
                     </div>
                     <div class='twentyfourth-panel panel'>
@@ -171,7 +200,8 @@
                         <img class='profile-img' src='https://i.imgur.com/6qphWwG.png' alt='Jack' />
                     </div>
                     <div class='twentyfifth-panel panel'>
-                        <a class='profile' href='https://fahad-developer.com/' rel="noopener noreferrer" target="_blank">Fahad Hussain</a>
+                        <a class='profile' href='https://fahad-developer.com/' rel="noopener noreferrer" target="_blank">Fahad</a>
+                        <a class='profile' href='https://fahad-developer.com/' rel="noopener noreferrer" target="_blank">Hussain</a>
                         <img class='profile-img' src='https://i.imgur.com/B43r9OS.png' alt='Fahad' />
                     </div>
                 </div> 
@@ -188,7 +218,9 @@
             </div>
             <div class='div4back div-container'>
                 <div class='div-small-container'>
-                    <div class='add-info'>Thank you for reading!</br></br> Please do not hesitate to reach out at any time. I am looking forward to amazing and fulfilling opportunities.</div>
+                    <div class='inside-position'>
+                        <div class='add-info'>Thank you for reading!</br></br> Please do not hesitate to reach out at any time. I am looking forward to amazing and fulfilling opportunities.</div>
+                    </div>
                 </div> 
     
             </div>
@@ -199,13 +231,12 @@
                     <a class='external-links' href='https://www.linkedin.com/in/calvinkim4/' rel="noopener noreferrer" target="_blank"><i class="fab fa-linkedin icons"></i></a>
                     <a class='external-links' href='https://docdro.id/WuNDAPt' rel="noopener noreferrer" target="_blank"><i class="far fa-file icons"></i></a>
                 </div> 
-
-                <form method="GET" action="mailto:calvinkim4@gmail.com" enctype="text/plain">
-                    <input type="text" placeholder='Email'/>
-                    <input type="text" placeholder='Subject'/>
-                    <textarea placeholder='Content'></textarea>
-                    <button class='input-button'>Send</button>
-                </form>
+                <form method="POST" action="https://formspree.io/calvinkim4@gmail.com">
+                    <input type="email" name="_replyto" placeholder="Your email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email'" >
+                    <input type="text" name="subject" placeholder="Subject" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Subject'" >
+                    <textarea name="message" placeholder="Message" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Content'"></textarea>
+                    <button class='input-button' type="submit">Send</button>
+                  </form>
             </div>  
         </section>
         <script src='script.js'></script>
