@@ -248,22 +248,6 @@ section{
     animation: divactive 5s forwards;
   }
 
-  /* .div-active-mobile{
-    transform: rotateY(-180deg);
-    -webkit-animation: divactive 5s forwards;
-    -moz-animation: divactive 5s forwards;
-    -ms-animation: divactive 5s forwards;
-    animation: divactive 5s forwards;
-  } */
-
-/* .div-reverse-rotate {
-    transform: rotateY(180deg);
-    -webkit-animation: divactive 2s forwards;
-    -moz-animation: divactive 2s forwards;
-    -ms-animation: divactive 2s forwards;
-    animation: divactive 2s forwards;
-  } */
-
   @keyframes divactive {
     0% {
       z-index: 1;
@@ -273,16 +257,43 @@ section{
     }
   }
 
-  .div1-reverse {
+  .div-active-mobile{
+    transform: rotateY(-180deg);
+    -webkit-animation: divactivemobile 5s forwards;
+    -moz-animation: divactivemobile 5s forwards;
+    -ms-animation: divactivemobile 5s forwards;
+    animation: divactivemobile 5s forwards;
+  }
+
+
+  @keyframes divactivemobile {
+    0% {
+      display: block;
+    }
+    100% {
+      display: none;
+      border: none;
+    }
+  }
+
+/* .div-reverse-rotate {
+    transform: rotateY(180deg);
+    -webkit-animation: divactive 2s forwards;
+    -moz-animation: divactive 2s forwards;
+    -ms-animation: divactive 2s forwards;
+    animation: divactive 2s forwards;
+  } */
+
+  /* .div1-reverse {
     background: #abc;
     transform-origin: right center;
     transition: 1s;
     z-index: 1;
-  }
+  } */
 
-  p {
+  /* p {
     font-size: 20px;
-  }
+  } */
 
   .contact-title {
     margin: 10px;
@@ -688,8 +699,8 @@ section{
 
   .panel5-img {
     display: block;
-    height: 70%;
-    width: auto;
+    height: auto;
+    width: 90%;
     margin: 15% auto;
   }
 
@@ -732,7 +743,7 @@ section{
     display: block;
     height: auto;
     width: 70%;
-    margin: 2% auto;
+    margin: 3% auto;
   }
 
   .hackerman-div {
@@ -862,7 +873,7 @@ section{
     background-color: white;
     font-size: 5vw;
     font-family: 'Bangers', cursive;
-    margin: 0 5px;
+    margin: 0 15px;
     padding: 10px;
   }
 
@@ -883,7 +894,7 @@ section{
     transform-style: preserve-3d;
   }
 
-  /* .div-small-container {
+  .div-small-container {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -896,52 +907,58 @@ section{
     -moz-backface-visibility: hidden;
     backface-visibility: hidden;
     background-image:radial-gradient(circle, rgb(174, 231, 250), rgb(4, 160, 212));
-  } */
+  }
+
+  .div1 {
+    transform-origin: left center;
+    transition: 1s;
+    z-index: 2;
+  }
 
   .div1back {
-    transform-origin: center;
+    transform-origin: left center;
     transition: 1s;
     z-index: 1;
   }
 
   .div2 {
-    transform-origin: center;
+    transform-origin: left center;
     transition: 1s;   
     z-index: 0;
   }
 
   .div2back {
-    transform-origin: center;
+    transform-origin: left center;
     transition: 1s;
     z-index: -1;
   }
 
   .div3 {
-    transform-origin: center;
+    transform-origin: left center;
     transition: 1s;   
     z-index: -2;
   }
 
   .div3back {
-    transform-origin: center;
+    transform-origin: left center;
     transition: 1s;
     z-index: -3;
   }
 
   .div4 {
-    transform-origin: center;
+    transform-origin: left center;
     transition: 1s;   
     z-index: -4;
   }
 
   .div4back {
-    transform-origin: center;
+    transform-origin: left center;
     transition: 1s;
     z-index: -5;
   }
 
   .div5 {
-    transform-origin: center;
+    transform-origin: left center;
     transition: 1s;   
     z-index: -6;
   }
