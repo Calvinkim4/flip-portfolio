@@ -81,7 +81,7 @@ section{
     bottom: 0;
     width: 100%;
     font-size: 1vw;
-    color: white;
+    color: #f5d742;
   }
 
   .title-container {
@@ -681,7 +681,7 @@ section{
     display: block;
     height: auto;
     width: 90%;
-    margin: 15% auto;
+    margin: 4% auto;
   }
 
   .panel5a-img {
