@@ -259,10 +259,10 @@ section{
 
   .div-active-mobile{
     transform: rotateY(-180deg);
-    -webkit-animation: divactivemobile 5s forwards;
-    -moz-animation: divactivemobile 5s forwards;
-    -ms-animation: divactivemobile 5s forwards;
-    animation: divactivemobile 5s forwards;
+    -webkit-animation: divactivemobile 2s forwards;
+    -moz-animation: divactivemobile 2s forwards;
+    -ms-animation: divactivemobile 2s forwards;
+    animation: divactivemobile 2s forwards;
   }
 
 
@@ -275,25 +275,6 @@ section{
       border: none;
     }
   }
-
-/* .div-reverse-rotate {
-    transform: rotateY(180deg);
-    -webkit-animation: divactive 2s forwards;
-    -moz-animation: divactive 2s forwards;
-    -ms-animation: divactive 2s forwards;
-    animation: divactive 2s forwards;
-  } */
-
-  /* .div1-reverse {
-    background: #abc;
-    transform-origin: right center;
-    transition: 1s;
-    z-index: 1;
-  } */
-
-  /* p {
-    font-size: 20px;
-  } */
 
   .contact-title {
     margin: 10px;
@@ -341,7 +322,6 @@ section{
       resize: none;
       background-color: white;
       border: 2px solid black;
-
       font-family: 'Bangers', cursive;
       color: black;
       transition: all .3s ease-in-out;
@@ -849,7 +829,7 @@ section{
 }
 
 .webapp-links {
-  font-size: 10px;
+  font-size: 1vw;
   margin: 0;
 }
 
@@ -868,8 +848,8 @@ section{
   }
 
   .mobile-btn {
-    width: 200px;
-    height: 100px;
+    width: 35%;
+    height: 25%;
     background-color: white;
     font-size: 5vw;
     font-family: 'Bangers', cursive;
@@ -963,4 +943,65 @@ section{
     z-index: -6;
   }
 
+  .issue-title {
+    font-size: 4vw;
+    letter-spacing: 2px;
+  }
+
+  .name {
+    font-size: 7vw;
+    letter-spacing: 7px;
+  }
+
+
+  .smaller-name {
+    font-size: 3vw;
+    letter-spacing: 7px;
+  }
+
+  .yellow-textbox {
+    font-size: 2.8vw;
+    line-height: 1.3;
+  }
+
+  .positions {
+    font-size: 2.3vw;
+  }
+
+  .skill-icons {
+    font-size: 8vw;
+  }
+
+  .webapp-links {
+    font-size: 3vw;
+  }
+
+  .postcript {
+    font-size: 3vw;
+  }
+
+  .profile {
+    font-size: 4vw;
+  }
+
+  .add-info {
+    font-size: 4vw;
+  }
+
+  a {
+    font-size: 7vw;
+    margin: 30px 50px;
+  }
+
+  input {
+    font-size: 4vw;
+  }
+
+  textarea {
+    font-size: 4vw;
+  }
+
+  .input-button {
+    font-size: 4vw;
+  }
 }
